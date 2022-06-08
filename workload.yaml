@@ -5,6 +5,9 @@ metadata:
   labels: 
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: tanzu-sample-flask
+    tanzu.app.live.view: "true"
+    tanzu.app.live.view.application.actuator.port: "8081"
+    #tanzu.app.live.view.application.flavours: spring-boot
 spec:
   params:
   - name: annotations
