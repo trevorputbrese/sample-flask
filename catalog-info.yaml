@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tanzu-sample-flask
+  description: Tanzu Sample Flask App
+  tags:
+    - app-accelerator
+    - python
+    - flask
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-sample-flask'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
